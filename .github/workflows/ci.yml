@@ -33,5 +33,5 @@ jobs:
         run: composer phpstan
 
       - name: "Run tests"
-        run: composer tests
+        run: composer test
 
