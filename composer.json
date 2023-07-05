@@ -1,0 +1,28 @@
+{
+    "name": "louisperre/composer-td2",
+    "description": "First composer package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Louisperre\\ComposerTd2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Louis Perrenot",
+            "email": "louis.perrenot@edu.devinci.net"
+        }
+    ],
+    "require": {
+        "php": ">= 8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.2"
+    },
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyze src --level=max",
+        "test": "@php vendor/bin/phpunit --testdox tests"
+    }
+}
